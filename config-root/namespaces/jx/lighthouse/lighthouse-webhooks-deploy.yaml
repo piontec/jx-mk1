@@ -22,7 +22,7 @@ spec:
       labels:
         app: lighthouse-webhooks
       annotations:
-        jenkins-x.io/hash: '166663923acc9e5020541b8a88fad5e28a370d143f7597f65bb17a2332bfa42e'
+        jenkins-x.io/hash: '73fa7ee65141a89fcfa513fb75b7a2f95b6359eb72434db0c16b7a2a0858a9d5'
     spec:
       serviceAccountName: lighthouse-webhooks
       containers:
