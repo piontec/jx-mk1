@@ -29,6 +29,7 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.106.184.79
   environments:
   - key: dev
     owner: piontec
