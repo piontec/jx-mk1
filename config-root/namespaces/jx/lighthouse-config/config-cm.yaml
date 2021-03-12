@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         piontec/jx-mk1: true
+        piontec/jx3-gohttp-3: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         piontec/jx-mk1: merge
+        piontec/jx3-gohttp-3: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - piontec/jx-mk1
+        - piontec/jx3-gohttp-3
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - piontec/jx-mk1
+        - piontec/jx3-gohttp-3
       target_url: http://dashboard-jx.192.168.39.213.nip.io
 kind: ConfigMap
 metadata:
