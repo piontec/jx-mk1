@@ -18,7 +18,7 @@
     - name: bucketrepo
       url: http://bucketrepo-jx.192.168.39.213.nip.io/
     - name: hook
-      url: http://1827a6401cbf.ngrok.io/hook
+      url: http://a1ca9498eafb.ngrok.io/hook
     name: jxboot-helmfile-resources
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
@@ -132,3 +132,33 @@
     repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
     resourcePath: config-root/namespaces/tekton-pipelines/tekton-pipeline
     version: 0.21.1
+- namespace: jx-staging
+  path: helmfiles/jx-staging/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    applicationUrl: http://jx3-gohttp-3-jx-staging.192.168.39.213.nip.io
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: jx3-gohttp-3
+      url: http://jx3-gohttp-3-jx-staging.192.168.39.213.nip.io
+    name: jx3-gohttp-3
+    repositoryName: dev
+    repositoryUrl: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
+    resourcePath: config-root/namespaces/jx-staging/jx3-gohttp-3
+    version: 0.0.2
+- namespace: jx-production
+  path: helmfiles/jx-production/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    applicationUrl: http://jx3-gohttp-3-jx-production.192.168.39.213.nip.io
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: jx3-gohttp-3
+      url: http://jx3-gohttp-3-jx-production.192.168.39.213.nip.io
+    name: jx3-gohttp-3
+    repositoryName: dev
+    repositoryUrl: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
+    resourcePath: config-root/namespaces/jx-production/jx3-gohttp-3
+    version: 0.0.2
