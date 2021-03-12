@@ -14,8 +14,11 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.106.184.79
   environments:
   - key: dev
+    owner: piontec
+    repository: jx-mk1
   - key: staging
   - key: production
   ingress:
@@ -27,6 +30,8 @@ spec:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: piontec
   repository: bucketrepo
   secretStorage: local
   vault: {}
