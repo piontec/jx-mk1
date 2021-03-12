@@ -1,0 +1,39 @@
+# Source: jx3-gohttp-3/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-12T15:45:06Z"
+  deletionTimestamp: null
+  name: 'jx3-gohttp-3-0.0.2'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.2
+      sha: 7a496992cc1935d0a761194bb8f3f85828fc81e6
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: b18676e18d8291afb3c951757703d77dc10ca90a
+  gitHttpUrl: https://github.com/piontec/jx3-gohttp-3
+  gitOwner: piontec
+  gitRepository: jx3-gohttp-3
+  name: 'jx3-gohttp-3'
+  releaseNotesURL: https://github.com/piontec/jx3-gohttp-3/releases/tag/v0.0.2
+  version: v0.0.2
+status: {}
