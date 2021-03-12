@@ -5,7 +5,7 @@ metadata:
   name: jx3-gohttp-3-jx3-gohttp-3
   labels:
     draft: draft-app
-    chart: "jx3-gohttp-3-0.0.2"
+    chart: "jx3-gohttp-3-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: jx3-gohttp-3-jx3-gohttp-3
       containers:
         - name: jx3-gohttp-3
-          image: "10.106.184.79/piontec/jx3-gohttp-3:0.0.2"
+          image: "10.106.184.79/piontec/jx3-gohttp-3:0.0.3"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.2
+              value: 0.0.3
           envFrom: null
           ports:
             - name: http
